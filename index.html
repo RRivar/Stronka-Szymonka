@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fryzury Świata</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <!-- Compiled and minified JavaScript -->
@@ -12,54 +14,144 @@
 </head>
 <body>
   <header>
-    <nav>
-      <div class="nav-wrapper amber darken-4">
-        <a href="/" class="brand-logo">Fryzury Świata</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="">Sass</a></li>
-          <li><a href="">Components</a></li>
-          <li><a href="">Javascript</a></li>
-          <li><a href="">Mobile</a></li>
-        </ul>
-      </div>
-    </nav>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper amber darken-4">
+          <span class="hide-on-small-only"><a href="index.html" class="brand-logo">Fryzury Świata</a></span>
+          <span class="hide-on-med-and-up"><a href="index.html" class="brand-logo"><h5>Fryzury Świata</h5></a></span>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#nowe">Nowe Fryzury</a></li>
+            <li><a href="#najmodniejsze">Najmodniejsze Fryzury</a></li>
+            <li><a href="#wszystkie">Wszystkie Fryzury</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
     
     <ul class="sidenav" id="mobile-demo">
-      <li><a href="">Sass</a></li>
-      <li><a href="">Components</a></li>
-      <li><a href="">Javascript</a></li>
-      <li><a href="">Mobile</a></li>
+      <li><a href="#nowe">Nowe Fryzury</a></li>
+      <li><a href="#najmodniejsze">Najmodniejsze Fryzury</a></li>
+      <li><a href="#wszystkie">Wszystkie Fryzury</a></li>
     </ul>
   </header>
   <main>
     <div class="row">
       <div class="col s10 offset-s1">
-        <h3>Najmodniejsze fryzury</h3>
-        <div class="row">
-          <div class="col s3">
-            <img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" style="width: 100%;" alt="zdjęcie">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem error, sit deleniti doloribus cupiditate
-              exercitationem voluptates ea ad numquam vel itaque fuga a dolorum quos placeat minima! Temporibus, quibusdam incidunt?
-            </p>
+        <div class="row" id="nowe">
+          <div class="row">
+            <h3>Nowe fryzury</h3>
           </div>
-          <div class="col s3">
-            <img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" style="width: 100%;" alt="zdjęcie">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem error, sit deleniti doloribus cupiditate
-              exercitationem voluptates ea ad numquam vel itaque fuga a dolorum quos placeat minima! Temporibus, quibusdam incidunt?
-            </p>
+          <div class="row">
+            <div class="col s12 m6 l3">
+              <img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" style="width: 100%;"
+              alt="zdjęcie">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem error, sit deleniti doloribus cupiditate
+                exercitationem voluptates ea ad numquam vel itaque fuga a dolorum quos placeat minima! Temporibus, quibusdam
+                incidunt?
+              </p>
+            </div>
+            <div class="col s12 m6 l3">
+              <img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" style="width: 100%;"
+              alt="zdjęcie">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem error, sit deleniti doloribus cupiditate
+                exercitationem voluptates ea ad numquam vel itaque fuga a dolorum quos placeat minima! Temporibus, quibusdam
+                incidunt?
+              </p>
+            </div>
+            <div class="col s12 m6 l3">
+              <img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" style="width: 100%;"
+              alt="zdjęcie">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem error, sit deleniti doloribus cupiditate
+                exercitationem voluptates ea ad numquam vel itaque fuga a dolorum quos placeat minima! Temporibus, quibusdam
+                incidunt?
+              </p>
+            </div>
+            <div class="col s12 m6 l3">
+              <img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" style="width: 100%;" alt="zdjęcie">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem error, sit deleniti doloribus cupiditate
+                exercitationem voluptates ea ad numquam vel itaque fuga a dolorum quos placeat minima! Temporibus, quibusdam
+                incidunt?
+              </p>
+            </div>
           </div>
-          <div class="col s3">
-            <img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" style="width: 100%;" alt="zdjęcie">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem error, sit deleniti doloribus cupiditate
-              exercitationem voluptates ea ad numquam vel itaque fuga a dolorum quos placeat minima! Temporibus, quibusdam incidunt?
-            </p>
+        </div>
+        <div class="row" id="najmodniejsze">
+          <div class="row">
+            <h3>Najmodniejsze fryzury</h3>
           </div>
-          <div class="col s3">
-            <img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" style="width: 100%;" alt="zdjęcie">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem error, sit deleniti doloribus cupiditate
-              exercitationem voluptates ea ad numquam vel itaque fuga a dolorum quos placeat minima! Temporibus, quibusdam incidunt?
-            </p>
+          <div class="row">
+            <div class="col s12 m6 l3">
+              <img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" style="width: 100%;"
+                alt="zdjęcie">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem error, sit deleniti doloribus cupiditate
+                exercitationem voluptates ea ad numquam vel itaque fuga a dolorum quos placeat minima! Temporibus, quibusdam
+                incidunt?
+              </p>
+            </div>
+            <div class="col s12 m6 l3">
+              <img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" style="width: 100%;"
+                alt="zdjęcie">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem error, sit deleniti doloribus cupiditate
+                exercitationem voluptates ea ad numquam vel itaque fuga a dolorum quos placeat minima! Temporibus, quibusdam
+                incidunt?
+              </p>
+            </div>
+            <div class="col s12 m6 l3">
+              <img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" style="width: 100%;"
+                alt="zdjęcie">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem error, sit deleniti doloribus cupiditate
+                exercitationem voluptates ea ad numquam vel itaque fuga a dolorum quos placeat minima! Temporibus, quibusdam
+                incidunt?
+              </p>
+            </div>
+            <div class="col s12 m6 l3">
+              <img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" style="width: 100%;"
+                alt="zdjęcie">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem error, sit deleniti doloribus cupiditate
+                exercitationem voluptates ea ad numquam vel itaque fuga a dolorum quos placeat minima! Temporibus, quibusdam
+                incidunt?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="wszystkie">
+          <div class="row">
+            <h3>Wszystkie fryzury</h3>
+          </div>
+          <div class="row">
+            <div class="col s12 m6 l3">
+              <img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" style="width: 100%;"
+                alt="zdjęcie">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem error, sit deleniti doloribus cupiditate
+                exercitationem voluptates ea ad numquam vel itaque fuga a dolorum quos placeat minima! Temporibus, quibusdam
+                incidunt?
+              </p>
+            </div>
+            <div class="col s12 m6 l3">
+              <img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" style="width: 100%;"
+                alt="zdjęcie">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem error, sit deleniti doloribus cupiditate
+                exercitationem voluptates ea ad numquam vel itaque fuga a dolorum quos placeat minima! Temporibus, quibusdam
+                incidunt?
+              </p>
+            </div>
+            <div class="col s12 m6 l3">
+              <img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" style="width: 100%;"
+                alt="zdjęcie">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem error, sit deleniti doloribus cupiditate
+                exercitationem voluptates ea ad numquam vel itaque fuga a dolorum quos placeat minima! Temporibus, quibusdam
+                incidunt?
+              </p>
+            </div>
+            <div class="col s12 m6 l3">
+              <img src="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" style="width: 100%;"
+                alt="zdjęcie">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem error, sit deleniti doloribus cupiditate
+                exercitationem voluptates ea ad numquam vel itaque fuga a dolorum quos placeat minima! Temporibus, quibusdam
+                incidunt?
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -73,5 +165,10 @@
       </div>
     </div>
   </footer>
+  <script>
+    $(document).ready(function () {
+        $('.sidenav').sidenav();
+      });
+  </script>
 </body>
 </html>
