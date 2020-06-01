@@ -1,2 +1,1 @@
 # Stronka-Szymonka
-TES
