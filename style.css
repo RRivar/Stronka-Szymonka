@@ -19,3 +19,6 @@ main {
 .brand-logo {
     margin-left: 16px;
 }
+img {
+    width: 100%;
+}
