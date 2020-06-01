@@ -11,3 +11,7 @@ main {
 .page-footer {
     padding-top: 0!important;
 }
+
+.brand-logo {
+    margin-left: 16px;
+}
